@@ -42,4 +42,3 @@ db._collectionName.update(
 
 db._collectionName.drop() = deletes collection
 
-git config --global user.email
