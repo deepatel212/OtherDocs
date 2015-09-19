@@ -1,3 +1,3 @@
 # OtherDocs
 
-this Repository contains notes
+This Repository contains notes
