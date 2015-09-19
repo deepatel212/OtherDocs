@@ -1,0 +1,45 @@
+use _databaseName = creates if not available and switched to that database
+db.dropDatabase() = deletes current database
+
+**** To insert single document data
+
+db._collectionName.insert(
+
+ // Data
+
+)
+
+**** To insert array of documents
+
+db._collectionName.insert([ 
+
+	// list of array data
+
+])
+
+show _collectionName = To show collections in database
+
+db._collectionName.find() = will show all data in that collection.
+
+db._collectionName.find().pretty() = will show all data in that collection in pretty format.
+
+db._collectionName.findOne() = will display first item inserted in that collection.
+
+***** will remove item from collection
+
+db._collectionName.remove(
+	{**Selection Criteria}
+)
+
+**** will update item in colection
+
+db._collectionName.update(
+
+	{**Selection Criteria},
+	{**new data item to be updated}
+
+)
+
+db._collectionName.drop() = deletes collection
+
+git config --global user.email
