@@ -1,0 +1,30 @@
+$(function(){
+  var documentEl= $(document),
+  parallexbg= $('div._classname);
+  
+  documentEl.on('scroll',function(){
+    var curscrpos = documentEl.scrollTop();
+    parallexbg.css('background-position','0 '+ -curscrpos/4 + 'px');
+  });
+
+});
+
+
+$(function(){
+  $('a[href^="#"]').click(function(e){
+    var target = $(this).attr('href');
+    var strip = target.slice(1);
+    var anchor = $("a[name='"+strip+"']");
+    
+    e.preventDefault();
+    
+    $('html,body').animate({
+      scrollTop: anchor.offset().top
+    },'slow');
+  });
+
+});
+
+
+<a href="#first">section1</a>
+<a name="first">section 1 body</a>
